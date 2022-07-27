@@ -9,12 +9,12 @@ function difGol(golesFavor=0, golesContra=0) {
 
 do{
     var equipo = prompt("Ingrese un equipo")    
-    if (equipo == ""){
+    if (equipo == "") {
         alert("Ingrese un equipo para continuar")
         continue        
     } 
     var partidosGanados = parseFloat(prompt("Ingrese partidos ganados"))
-    if (isNaN(partidosGanados)<0){
+    if (partidosGanados<0) {
         alert("Ingrese un número válido")
         continue      
     }    
